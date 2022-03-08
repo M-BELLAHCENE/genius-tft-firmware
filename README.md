@@ -13,7 +13,7 @@ L'écran de l'imprimante peut être reprogrammé uniquement en utilisant une car
 
 Mode opératoire pour programmer l'écran de la Genius :
 - Formater une carte MicroSD.
-- Copier tous les fichiers sur la carte
+- Copier tous les fichiers du repo https://github.com/M-BELLAHCENE/genius-tft-firmware sur la carte
 - Insérer la carte dans l'imprimante, dans la fente à côté du port USB.
 - Allumer l'imprimante ou la réinitialiser (petit bouton reset à droite de l'écran)
 
