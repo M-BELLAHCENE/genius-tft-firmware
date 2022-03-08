@@ -1,4 +1,4 @@
-﻿#--------------------------------------------------------------------
+#--------------------------------------------------------------------
 #########  Printer type setting  ##################################
 
 #mainboard firmware setting(marlin:1; repetier:2; smoothie:3)
@@ -24,8 +24,8 @@
 >cfg_custom_bed_flag:1
 
 #the max target temp of extruder and heated bed
->cfg_max_sprayer_temperature:270
->cfg_max_hotbed_temperature:150
+>cfg_max_sprayer_temperature:260
+>cfg_max_hotbed_temperature:120
 
 #pause position (-1 is invalid; Z-axis is relative position)
 >cfg_XPOS:-1
@@ -41,7 +41,7 @@
 #enable power detecting module(mks 220det:1; mks pwc:0)
 >cfg_insert_det_module:0
 
-#enable auto off after print finish function (no:0; Yes:1）
+#enable auto off after print finish function (no:0; Yes:1)
 >cfg_print_finish_close_Machine:0
 
 #set PB0 signal when use it for sencond nozzle (high level:1; low level:0)
@@ -72,7 +72,7 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_filament_load_limit_temperature:200
 
 #The length of Load filament before unloader filament. 
->cfg_unload_retract_length:5
+>cfg_unload_retract_length:10
 
 #The speed of load filament  before unloader filament.
 >cfg_unload_retract_speed:500
@@ -143,32 +143,33 @@ It will auto heat up if the current temp doesn't reach the target.
 
 
 #set number of  "More" button 
->moreitem_pic_cnt:5
+>moreitem_pic_cnt:7
 
 #edit command for 1~7 "More" button,each command must be separated by semicolon ";"
 >moreitem_button1_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S0;
 
->moreitem_button2_cmd:M42 P4 S255;M42 P5 S255;M42 P6 S255;
+>moreitem_button2_cmd:M104 S260;G28;G0 Z180 X110;M42 P5 S255;M42 P4 S0;M42 P6 S0;M109 S245;M104 S260;G4 S5;M42 P4 S24;M42 P5 S0;M42 P6 S2;M109 R170;M104 S0;M42 P4 S0;G4 S2;G28 X;M42 P6 S0;M42 P5 S0;M42 P4 S0
 
->moreitem_button3_cmd:M42 P4 S0;M42 P5 S255;M42 P6 S0;
+>moreitem_button3_cmd:G28 Y; G0 Y220;
 
->moreitem_button4_cmd:M42 P4 S255;M42 P5 S0;M42 P6 S0;
+>moreitem_button4_cmd:G28 Z; G0 Z250;
 
->moreitem_button5_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S255;
+>moreitem_button5_cmd:M42 P4 S255;M42 P5 S255;M42 P6 S255;
 
->moreitem_button6_cmd:G28 Z0;
+>moreitem_button6_cmd:M42 P4 S128;M42 P5 S128;M42 P6 S128;
 
->moreitem_button7_cmd:G28;
+>moreitem_button7_cmd:M42 P4 S64;M42 P5 S64;M42 P6 S64;
+
 
 #how many "More" button display on screen interface
->morefunc_cnt:2
+>morefunc_cnt:5
 
 #command setting on button1~6
 >morefunc1_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S0;
 >morefunc2_cmd:M42 P4 S255;M42 P5 S255;M42 P6 S255;
->morefunc3_cmd:G28;
->morefunc4_cmd:G28;
->morefunc5_cmd:G28;
+>morefunc3_cmd:M42 P5 S0;M42 P4 S24;M42 P6 S2
+>morefunc4_cmd:M42 P5 S32;M42 P4 S4;M42 P6 S0
+>morefunc5_cmd:M42 P5 S0;M42 P4 S0;M42 P6 S255
 >morefunc6_cmd:G28;
 
 #---------------------------------------------------------------------------------
@@ -201,7 +202,7 @@ It will auto heat up if the current temp doesn't reach the target.
 #3D effects setting (disable: 0; enable: 1)
 >cfg_BUTTON_3D_effects:1
 
-#The screen is flipped 180°(0: no flip, 1: flip)
+#The screen is flipped 180�(0: no flip, 1: flip)
 >cfg_OVERTURN_180:0
 
 #shield the function of detection power (0:no shield ,1:shield)
@@ -217,7 +218,7 @@ It will auto heat up if the current temp doesn't reach the target.
 #For the M110 command plus check, the version of Marlin 1.0.2 and below is set to 1, and the other versions are set to 0.
 >cfg_M110_add_checkSum:0
 
-#Enable function of display error message. (no:0; Yes:1）
+#Enable function of display error message. (no:0; Yes:1)
 >cfg_display_eeror_message:1
 
 #-----------------------------------------------------------------------
