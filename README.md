@@ -1,5 +1,33 @@
 ![canvas](https://user-images.githubusercontent.com/34917424/157110071-cfc3c43f-9bcf-4830-9e46-9b140b1651cb.png)
 
+
+Bonjour,
+
+Ce firmware TFT apporte 3 fonctions développées pour faciliter l'entretien de l'imprimante :
+- Clean
+- FrontBed
+- Z-Max
+
+Il n'est pas nécessaire de reflasher la carte mère, ce soft TFT ne s'appuie que sur le GCode standard.  
+L'écran de l'imprimante peut être reprogrammé uniquement en utilisant une carte MicroSD : cette opération n'est pas possible par les autres biais (cable ou clef USB).  
+
+Mode opératoire pour programmer l'écran de la Genius :
+- Formater une carte MicroSD.
+- Copier tous les fichiers sur la carte
+- Insérer la carte dans l'imprimante, dans la fente à côté du port USB.
+- Allumer l'imprimante ou la réinitialiser (petit bouton reset à droite de l'écran)
+
+L'imprimante démarre avec un écran noir ou s'affichent les phases de la programmation en vert.  
+Une fois la programmation terminée l'imprimante redémarre.  
+
+La reprogrammation de l'écran redirige le système de fichier sur le port MicroSD.  
+Si vous avez l'habitude d'utiliser la clef USB il faudra aller dans le menu SET, option FILE et y choisir l'USB.  
+
+Sur la carte MicroSD vous constaterez que les deux répertoires et les fichiers sont renommés en BAK.  
+C'est tout a fait normal : c'était pour éviter que l'imprimante ne se reprogramme au redémarrage.
+
+# Le firmware en détails
+
 ## Limitations températures
 
 Tout comme dans le firmware des cartes mères j'ai défini les limites à 120 et 260°C.
