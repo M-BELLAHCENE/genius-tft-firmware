@@ -30,7 +30,11 @@ C'est tout a fait normal : c'était pour éviter que l'imprimante ne se reprogra
 
 ## Limitations températures
 
-Tout comme dans le firmware des cartes mères j'ai défini les limites à 120 et 260°C.
+Il peut arriver que l'imprimante trace une mystérieuse diagonale ou une ligne droite aller-retour sur la première couche et qu'on ait des pauses durant la fabrication.  
+De mon expérience avec l'ABS ou l'ASA ces problèmes surviennent quand l'électronique surchauffe.  
+Les fonctions de chauffe de buse et de plateau sont limitées respectivement à 260°C et 120°C, ceci afin de préserver l'imprimante des coups de chaleur.  
+Ces limites sont empiriques : au dessus de ces températures j'ai constaté des problèmes multiples et variés.  
+Ces limites ne touchent pas le GCode de vos impressions.  
 
 ## La page Tools/More...  
 
