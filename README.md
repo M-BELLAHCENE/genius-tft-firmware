@@ -39,11 +39,9 @@ These limits are empirical: above these temperatures I have noticed multiple and
 These limits do not affect the GCode of your prints.  
 
 ### The Tools/More...  
-
-![canvas](https://user-images.githubusercontent.com/34917424/157110682-badb1699-8f6d-4e4a-90e8-a40095de744b.png)
+![Capture](https://user-images.githubusercontent.com/34917424/158009166-e81d2c9b-65f5-413f-a5a6-a13398f0f199.PNG)
 
 #### Clean
-
 ![canvas](https://user-images.githubusercontent.com/34917424/157110778-dba61505-67d1-48ac-9e17-298beb92dc9d.png)
 
 To clean the nozzle I performed this sequence :
@@ -60,14 +58,13 @@ The LED turns off to signal the end of the cleaning cycle.
 Duration: Allow 4 minutes  
 
 #### Front Bed
-![canvas](https://user-images.githubusercontent.com/34917424/157111113-3b030914-3090-4efe-95bc-8349777e232f.png)
+![canvas2](https://user-images.githubusercontent.com/34917424/158008748-1e8e264f-4d39-4a55-8c8a-5295a2d7d506.png)
 
 When the plate is pulled forward, the Y axis motor generates current and can damage the controller.  
 With this button the machine performs a G28 Y then a G0 up to the maximum in Y to present the tray to the front of the printer.  
 
 #### Z-Max  
-
-![canvas](https://user-images.githubusercontent.com/34917424/157110936-50e12d07-15f2-4aa1-aab5-21a510976ac5.png)
+![canvas](https://user-images.githubusercontent.com/34917424/158008785-0dbfb6b1-5035-49a9-853c-a62502378182.png)
 
 This command performs a G28 Z and then a G0 to the Z max.  
 These movements are also very useful for maintenance of the worms.
@@ -168,11 +165,9 @@ Ces limites sont empiriques : au dessus de ces températures j'ai constaté des 
 Ces limites ne touchent pas le GCode de vos impressions.  
 
 ### La page Tools/More...  
-
-![canvas](https://user-images.githubusercontent.com/34917424/157110682-badb1699-8f6d-4e4a-90e8-a40095de744b.png)
+![Capture](https://user-images.githubusercontent.com/34917424/158009166-e81d2c9b-65f5-413f-a5a6-a13398f0f199.PNG)
 
 #### Clean
-
 ![canvas](https://user-images.githubusercontent.com/34917424/157110778-dba61505-67d1-48ac-9e17-298beb92dc9d.png)
 
 Pour nettoyer la buse j'effectuais cette séquence :
@@ -189,14 +184,13 @@ La LED s'éteint pour signaler la fin du cycle de nettoyage.
 Durée : Prévoir 4 minutes  
 
 #### Front Bed
-![canvas](https://user-images.githubusercontent.com/34917424/157111113-3b030914-3090-4efe-95bc-8349777e232f.png)
+![canvas2](https://user-images.githubusercontent.com/34917424/158008748-1e8e264f-4d39-4a55-8c8a-5295a2d7d506.png)
 
 Quand on tire sur le plateau pour le ramener en avant le moteur de l'axe Y génère du courant et peut endommager le contrôleur.  
 Avec ce bouton la machine effectue un G28 Y puis un G0 jusqu'au max en Y pour présenter le plateau à l'avant de l'imprimante.  
 
 #### Z-Max  
-
-![canvas](https://user-images.githubusercontent.com/34917424/157110936-50e12d07-15f2-4aa1-aab5-21a510976ac5.png)
+![canvas](https://user-images.githubusercontent.com/34917424/158008785-0dbfb6b1-5035-49a9-853c-a62502378182.png)
 
 Cette commande effectue un G28 Z puis un G0 jusqu'au Z max.  
 Ces mouvements sont également très utiles pour l'entretien des vis sans fin.
